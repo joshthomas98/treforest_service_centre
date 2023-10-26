@@ -7,6 +7,9 @@ import Navbar from "./components/Navbar";
 import Homepage from "./pages/Homepage";
 import SignIn from "./pages/SignIn";
 import OurServices from "./pages/OurServices";
+import Contact from "./pages/Contact";
+
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,9 +23,11 @@ function App() {
             <Route path="signin" element={<SignIn />} />
 
             <Route path="ourservices" element={<OurServices />} />
+
+            <Route path="contact" element={<Contact />} />
           </Routes>
         </BrowserRouter>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Container>
   );

@@ -34,71 +34,63 @@ function Copyright(props) {
 
 const tiers = [
   {
-    title: "Free",
-    price: "0",
-    description: [
-      "10 users included",
-      "2 GB of storage",
-      "Help center access",
-      "Email support",
-    ],
-    buttonText: "Sign up for free",
+    title: "Brake Pad / Disc Replacement",
+    subheader: "Replace brake pads / rotors / discs and or adjust brakes.",
+    price: "Price varies",
+    duration: "1 hr",
+    buttonText: "Learn More",
     buttonVariant: "outlined",
   },
   {
-    title: "Pro",
-    subheader: "Most popular",
-    price: "15",
-    description: [
-      "20 users included",
-      "10 GB of storage",
-      "Help center access",
-      "Priority email support",
-    ],
-    buttonText: "Get started",
-    buttonVariant: "contained",
-  },
-  {
-    title: "Enterprise",
-    price: "30",
-    description: [
-      "50 users included",
-      "30 GB of storage",
-      "Help center access",
-      "Phone & email support",
-    ],
-    buttonText: "Contact us",
+    title: "General Mechanical Work",
+    subheader: "General Mechanical Work",
+    price: "Price varies",
+    duration: "1 hr",
+    buttonText: "Learn More",
     buttonVariant: "outlined",
   },
-];
-
-const footers = [
   {
-    title: "Company",
-    description: ["Team", "History", "Contact us", "Locations"],
+    title: "Car MOT (Class 4)",
+    subheader: "Class 4 MOTs (for cars and light vans)",
+    price: "£40.00",
+    duration: "35 mins",
+    buttonText: "Learn More",
+    buttonVariant: "outlined",
   },
   {
-    title: "Features",
-    description: [
-      "Cool stuff",
-      "Random feature",
-      "Team feature",
-      "Developer stuff",
-      "Another one",
-    ],
+    title: "Van MOT (Class 7)",
+    subheader:
+      "Class 7 MOTs (for 3 to 3.5 tonne design gross weight commercial vans)",
+    price: "£50.00",
+    duration: "35 mins",
+    buttonText: "Learn More",
+    buttonVariant: "outlined",
   },
   {
-    title: "Resources",
-    description: [
-      "Resource",
-      "Resource name",
-      "Another resource",
-      "Final resource",
-    ],
+    title: "Passenger Vehicle MOT (13+ seats) (Class 5)",
+    subheader:
+      "Class 5 MOTs (Private passenger vehicles, ambulances, and motor caravans with 13 or more passenger seats)",
+    price: "£65.00",
+    duration: "35 mins",
+    buttonText: "Learn More",
+    buttonVariant: "outlined",
   },
   {
-    title: "Legal",
-    description: ["Privacy policy", "Terms of use"],
+    title: "Full Service",
+    subheader:
+      "Full Service: Oil and Oil filter replacement, Air filter and fuel filter replacement. Fluid checks and top ups if required. Mechanical inspection of visible components, i.e. braking, tyres, steering exhaust etc.",
+    price: "Price varies",
+    duration: "2 hrs",
+    buttonText: "Learn More",
+    buttonVariant: "outlined",
+  },
+  {
+    title: "Partial (intermediate) Service",
+    subheader: "Partial Service: Oil and Oil filter replacement.",
+    price: "Price varies",
+    duration: "1 hr",
+    buttonText: "Learn More",
+    buttonVariant: "outlined",
   },
 ];
 
@@ -142,22 +134,20 @@ export default function OurServices() {
       </Container>
       {/* End hero unit */}
       <Container maxWidth="md" component="main">
-        <Grid container spacing={5} alignItems="flex-end">
+        <Grid
+          container
+          spacing={5}
+          alignItems="flex-end"
+          sx={{ display: "flex" }}
+        >
           {tiers.map((tier) => (
-            // Enterprise card is full width at sm breakpoint
-            <Grid
-              item
-              key={tier.title}
-              xs={12}
-              sm={tier.title === "Enterprise" ? 12 : 6}
-              md={4}
-            >
+            <Grid item key={tier.title} xs={12} sm={12} md={4} sx={{ flex: 1 }}>
               <Card>
                 <CardHeader
                   title={tier.title}
                   subheader={tier.subheader}
                   titleTypographyProps={{ align: "center" }}
-                  action={tier.title === "Pro" ? <StarIcon /> : null}
+                  action={tier.title}
                   subheaderTypographyProps={{
                     align: "center",
                   }}
@@ -188,18 +178,6 @@ export default function OurServices() {
                       /mo
                     </Typography>
                   </Box>
-                  <ul>
-                    {tier.description.map((line) => (
-                      <Typography
-                        component="li"
-                        variant="subtitle1"
-                        align="center"
-                        key={line}
-                      >
-                        {line}
-                      </Typography>
-                    ))}
-                  </ul>
                 </CardContent>
                 <CardActions>
                   <Button fullWidth variant={tier.buttonVariant}>
@@ -210,36 +188,6 @@ export default function OurServices() {
             </Grid>
           ))}
         </Grid>
-      </Container>
-      {/* Footer */}
-      <Container
-        maxWidth="md"
-        component="footer"
-        sx={{
-          borderTop: (theme) => `1px solid ${theme.palette.divider}`,
-          mt: 8,
-          py: [3, 6],
-        }}
-      >
-        <Grid container spacing={4} justifyContent="space-evenly">
-          {footers.map((footer) => (
-            <Grid item xs={6} sm={3} key={footer.title}>
-              <Typography variant="h6" color="text.primary" gutterBottom>
-                {footer.title}
-              </Typography>
-              <ul>
-                {footer.description.map((item) => (
-                  <li key={item}>
-                    <Link href="#" variant="subtitle1" color="text.secondary">
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </Grid>
-          ))}
-        </Grid>
-        <Copyright sx={{ mt: 5 }} />
       </Container>
       {/* End footer */}
     </ThemeProvider>
