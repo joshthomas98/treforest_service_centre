@@ -10,14 +10,17 @@ const Homepage = () => {
           Welcome to Treforest Service Centre
         </Typography>
 
-        <Typography className="text-center pb-5" variant="body1">
-          Welcome to Treforest Service Centre, your trusted local car garage for
-          all your automotive needs. Located in the heart of Treforest, we've
-          been serving the community for many years with a commitment to
-          top-quality automotive services and repairs. Our MOT Testing Station,
-          conveniently situated at Unit 27 Business Development Centre on Main
-          Avenue in Treforest Industrial Estate, Pontypridd, CF37 5UR, ensures
-          your vehicle's safety and compliance with the highest standards.
+        <Typography className="container text-center pb-5" variant="body1">
+          <div className="col-md-9 mx-auto">
+            Welcome to Treforest Service Centre, your trusted local car garage
+            for all your automotive needs. Located in the heart of Treforest,
+            we've been serving the community for many years with a commitment to
+            top-quality automotive services and repairs. Our MOT Testing
+            Station, conveniently situated at Unit 27 Business Development
+            Centre on Main Avenue in Treforest Industrial Estate, Pontypridd,
+            CF37 5UR, ensures your vehicle's safety and compliance with the
+            highest standards.
+          </div>
         </Typography>
 
         <div className="container d-flex flex-row justify-content-between align-items-center">
