@@ -10,7 +10,7 @@ const Homepage = () => {
           Welcome to Treforest Service Centre
         </Typography>
 
-        <Typography className="text-center pb-3" variant="body1">
+        <Typography className="text-center pb-5" variant="body1">
           Welcome to Treforest Service Centre, your trusted local car garage for
           all your automotive needs. Located in the heart of Treforest, we've
           been serving the community for many years with a commitment to
@@ -20,22 +20,22 @@ const Homepage = () => {
           your vehicle's safety and compliance with the highest standards.
         </Typography>
 
-        <div className="d-flex flex-row justify-content-between align-items-center">
-          <div className="text-container">
+        <div className="container d-flex flex-row justify-content-between align-items-center">
+          <div className="text-container d-flex col-md-6 px-5">
             <Typography className="pt-3">
               We offer a range of services, including brake pad/disc
               replacement, general mechanical work, car MOT (Class 4), van MOT
               (Class 7), and passenger vehicle MOT (Class 5). Our team of
               experienced mechanics is dedicated to keeping your vehicles
               running smoothly and ensuring your safety on the road.
-            </Typography>
-            <Typography className="pt-3">
+              <br />
+              <br />
               Whether you need a full service, partial service, or specific
               repairs, we've got you covered. Contact us today to schedule an
               appointment or an MOT test to keep your vehicle in excellent
               condition.
-            </Typography>
-            <Typography variant="body1">
+              <br />
+              <br />
               Our team of experienced mechanics are dedicated to keeping your
               vehicles running smoothly. From routine maintenance to complex
               repairs, we've got you covered. Your safety and satisfaction are
@@ -44,27 +44,17 @@ const Homepage = () => {
           </div>
           <div className="image-container">
             <img
-              className="img-fluid"
+              className="img-fluid w-75"
               src="../../images/tsc1.jpeg"
               alt="LOGO"
             />
           </div>
         </div>
-
-        <div className="text-center pt-2">
-          <Button
-            variant="contained"
-            color="primary"
-            style={{ marginTop: "20px" }}
-          >
-            Schedule an Appointment
-          </Button>
-        </div>
         {/* </Paper> */}
       </section>
 
       <section>
-        <Typography className="text-center pt-4" variant="h4" gutterBottom>
+        <Typography className="text-center pt-5" variant="h4" gutterBottom>
           Our Services
         </Typography>
         <Grid container spacing={2}>
@@ -171,6 +161,16 @@ const Homepage = () => {
             </Paper>
           </Grid>
         </Grid>
+
+        <div className="text-center pt-4">
+          <Button
+            variant="contained"
+            color="primary"
+            style={{ marginTop: "20px" }}
+          >
+            Schedule an Appointment
+          </Button>
+        </div>
       </section>
     </Container>
   );
