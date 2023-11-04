@@ -6,7 +6,7 @@ const Homepage = () => {
     <Container maxWidth="lg">
       <section>
         {/* <Paper elevation={3} style={{ padding: "20px", marginTop: "20px" }}> */}
-        <Typography className="text-center pt-4" variant="h4" gutterBottom>
+        <Typography className="text-center pt-5" variant="h4" gutterBottom>
           Welcome to Treforest Service Centre
         </Typography>
 
@@ -21,6 +21,10 @@ const Homepage = () => {
             CF37 5UR, ensures your vehicle's safety and compliance with the
             highest standards.
           </div>
+        </Typography>
+
+        <Typography className="text-center pb-4" variant="h4">
+          Who We Are
         </Typography>
 
         <div className="container d-flex flex-row justify-content-between align-items-center">
@@ -57,7 +61,7 @@ const Homepage = () => {
       </section>
 
       <section>
-        <Typography className="text-center pt-5" variant="h4" gutterBottom>
+        <Typography className="text-center pt-5 pb-2" variant="h4" gutterBottom>
           Our Services
         </Typography>
         <Grid container spacing={2}>
@@ -131,7 +135,11 @@ const Homepage = () => {
             </Paper>
           </Grid>
 
-          <Grid item xs={4}>
+          <Grid
+            item
+            xs={4}
+            className="d-flex justify-content-center align-items-center"
+          >
             <Paper
               elevation={3}
               style={{ padding: "16px", textAlign: "center", height: "250px" }}
@@ -144,25 +152,32 @@ const Homepage = () => {
                 tyres, steering exhaust etc.
               </Typography>
               <Typography>Price varies</Typography>
-              <Typography>2 hrs</Typography>
+              <Typography>2 hr</Typography>
             </Paper>
           </Grid>
+        </Grid>
 
-          <Grid item xs={4}>
-            <Paper
-              elevation={3}
-              style={{ padding: "16px", textAlign: "center", height: "250px" }}
-            >
-              <Typography variant="h6">
-                Partial (intermediate) Service
-              </Typography>
-              <Typography>
-                Partial Service : Oil and Oil filter replacement.
-              </Typography>
-              <Typography>Price varies</Typography>
-              <Typography>1 hr</Typography>
-            </Paper>
-          </Grid>
+        <Grid
+          className="d-flex justify-content-center align-itmes-center pt-3"
+          item
+          xs={4}
+        >
+          <Paper
+            elevation={3}
+            style={{
+              padding: "16px",
+              textAlign: "center",
+              height: "250px",
+              width: "375px",
+            }}
+          >
+            <Typography variant="h6">Partial (intermediate) Service</Typography>
+            <Typography>
+              Partial Service : Oil and Oil filter replacement.
+            </Typography>
+            <Typography>Price varies</Typography>
+            <Typography>1 hr</Typography>
+          </Paper>
         </Grid>
 
         <div className="text-center pt-4">

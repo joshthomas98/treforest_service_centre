@@ -29,7 +29,7 @@ export default function Contact() {
         justifyContent: "center",
       }}
     >
-      <Box sx={{ maxWidth: 600, mx: "auto", p: 2 }}>
+      <Box sx={{ maxWidth: 600, mx: "auto", p: 2, marginTop: 4 }}>
         <Typography variant="h4" align="center" mb={2}>
           Contact Us
         </Typography>
