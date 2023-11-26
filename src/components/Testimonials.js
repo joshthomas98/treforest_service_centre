@@ -23,7 +23,7 @@ const Testimonials = () => {
                     "At Treforest Service Station, my van's well-being is a top
                     priority. The team's dedication to excellence and expertise
                     transformed my vehicle, making every journey smoother and
-                    more reliable than ever." — Craig
+                    more reliable than ever." — <strong>Craig</strong>
                   </p>
                 </div>
               </div>
@@ -41,7 +41,7 @@ const Testimonials = () => {
                     "Treforest Service Station stands out for it's exceptional
                     van services. The diverse range of services have enhanced my
                     van's performance. It's the go-to place for reliable
-                    automotive care." — Michael
+                    automotive care." — <strong>Michael</strong>
                   </p>
                 </div>
               </div>
@@ -57,9 +57,9 @@ const Testimonials = () => {
                   <h3 className="card-title mb-3">Steve</h3>
                   <p className="card-text text-dark">
                     "The professionalism at Treforest Service Station make
-                    vehicle maintenance a pleasure. A welcoming atmosphere,
-                    cutting-edge equipment, and friendly staff ensure that every
-                    visit is a delightful experience." — Steve
+                    vehicle maintenance a pleasure. A welcoming atmosphere and
+                    friendly staff ensure that every visit is a pleasant
+                    experience." — <strong>Steve</strong>
                   </p>
                 </div>
               </div>
@@ -77,7 +77,7 @@ const Testimonials = () => {
                     "Choosing Treforest Service Station was a game-changer for
                     my van. Personalised attention and expert care has instilled
                     confidence in every mile. Highly recommended for top-notch
-                    van services." — Jason
+                    van services." — <strong>Jason</strong>
                   </p>
                 </div>
               </div>

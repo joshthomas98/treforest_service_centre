@@ -6,21 +6,20 @@ const Homepage = () => {
   return (
     <div>
       <section>
-        {/* <Paper elevation={3} style={{ padding: "20px", marginTop: "20px" }}> */}
         <div style={{ position: "relative", textAlign: "center" }}>
           <img
             className="pt-3"
             style={{ width: "100%" }}
-            src="../../images/car-banner-image.jpg"
+            src="../../images/van1.jpg"
             alt="banner"
           />
           <Typography
             style={{
               position: "absolute",
-              top: "75%",
+              top: "15%",
               left: "50%",
               transform: "translate(-50%, -50%)",
-              color: "#fff",
+              color: "black",
             }}
             variant="h1"
             gutterBottom
@@ -28,21 +27,25 @@ const Homepage = () => {
             Treforest Service Centre
           </Typography>
         </div>
+      </section>
 
-        <Typography className="container text-center pb-5" variant="body1">
-          <div className="col-md-9 mx-auto pt-4 lead">
-            Welcome to Treforest Service Centre, your local one-stop-shop for
-            all your van-related automotive needs. Located in the heart of
-            Treforest, we've been serving the community for many years with a
-            commitment to top-quality van services and repairs. Our MOT Testing
-            Station, conveniently situated at Unit 27 Business Development
-            Centre on Main Avenue in Treforest Industrial Estate, Pontypridd,
-            CF37 5UR, ensures your van's safety and compliance with the highest
-            standards.
-          </div>
-        </Typography>
+      <section className="container text-center pb-5">
+        <div className="col-md-9 mx-auto pt-5 lead">
+          Welcome to Treforest Service Centre, your local one-stop-shop for all
+          your van-related automotive needs. Located in the heart of Treforest,
+          we've been serving the community for many years with a commitment to
+          top-quality van services and repairs. Our MOT Testing Station,
+          conveniently situated at Unit 27 Business Development Centre on Main
+          Avenue in Treforest Industrial Estate, Pontypridd, CF37 5UR, ensures
+          your van's safety and compliance with the highest standards.
+        </div>
+      </section>
 
-        <Typography className="text-center pb-4" variant="h4">
+      <section
+        className="text-center pb-4"
+        style={{ backgroundColor: "#f0f0f0", width: "100%" }}
+      >
+        <Typography className="text-center pb-4 pt-4" variant="h4">
           Who We Are
         </Typography>
 
@@ -63,7 +66,7 @@ const Homepage = () => {
               <br />
               Our team of experienced mechanics is devoted to keeping your vans
               running smoothly. From routine maintenance to complex van repairs,
-              we prioritize your safety and satisfaction.
+              we prioritise your safety and satisfaction.
             </p>
           </div>
           <div className="image-container">
@@ -74,10 +77,9 @@ const Homepage = () => {
             />
           </div>
         </div>
-        {/* </Paper> */}
       </section>
 
-      <section>
+      <section className="container">
         <Typography className="text-center pt-5 pb-2" variant="h4" gutterBottom>
           Our Services
         </Typography>
@@ -229,7 +231,7 @@ const Homepage = () => {
 
           <Grid
             item
-            xs={12} // Use xs={12} to make it span the entire width
+            xs={12}
             className="d-flex justify-content-center align-items-center mt-3"
           >
             <Paper
@@ -242,8 +244,8 @@ const Homepage = () => {
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                marginLeft: "auto", // Add auto margin to align with the middle card
-                marginRight: "auto", // Add auto margin to align with the middle card
+                marginLeft: "auto",
+                marginRight: "auto",
               }}
             >
               <Typography variant="h6">
@@ -261,7 +263,7 @@ const Homepage = () => {
           </Grid>
         </Grid>
 
-        <div className="text-center pt-4">
+        <div className="text-center pt-4 pb-5">
           <Button
             variant="contained"
             color="primary"
@@ -272,7 +274,10 @@ const Homepage = () => {
         </div>
       </section>
 
-      <section className="pt-5">
+      <section
+        className="pt-4"
+        style={{ backgroundColor: "#f0f0f0", width: "100%" }}
+      >
         <Testimonials />
       </section>
     </div>
