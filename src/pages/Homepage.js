@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Typography, Button, Paper, Grid } from "@mui/material";
+import Testimonials from "../components/Testimonials";
 
 const Homepage = () => {
   return (
@@ -30,14 +31,14 @@ const Homepage = () => {
 
         <Typography className="container text-center pb-5" variant="body1">
           <div className="col-md-9 mx-auto pt-4 lead">
-            Welcome to Treforest Service Centre, your local one stop shop car
-            garage for all your automotive needs. Located in the heart of
+            Welcome to Treforest Service Centre, your local one-stop-shop for
+            all your van-related automotive needs. Located in the heart of
             Treforest, we've been serving the community for many years with a
-            commitment to top-quality automotive services and repairs. Our MOT
-            Testing Station, conveniently situated at Unit 27 Business
-            Development Centre on Main Avenue in Treforest Industrial Estate,
-            Pontypridd, CF37 5UR, ensures your vehicle's safety and compliance
-            with the highest standards.
+            commitment to top-quality van services and repairs. Our MOT Testing
+            Station, conveniently situated at Unit 27 Business Development
+            Centre on Main Avenue in Treforest Industrial Estate, Pontypridd,
+            CF37 5UR, ensures your van's safety and compliance with the highest
+            standards.
           </div>
         </Typography>
 
@@ -48,23 +49,21 @@ const Homepage = () => {
         <div className="container d-flex flex-row justify-content-between align-items-center">
           <div className="text-container d-flex col-md-6 px-5">
             <p className="pt-3 lead">
-              We offer a range of services, including brake pad/disc
-              replacement, general mechanical work, car MOT (Class 4), van MOT
-              (Class 7), and passenger vehicle MOT (Class 5). Our team of
-              experienced mechanics is dedicated to keeping your vehicles
+              We specialise in a range of van services, including brake pad/disc
+              replacement, general mechanical work, and van MOT (Class 7). Our
+              team of experienced mechanics is dedicated to keeping your vans
               running smoothly and ensuring your safety on the road.
               <br />
               <br />
-              Whether you need a full service, partial service, or specific
-              repairs, we've got you covered. Contact us today to schedule an
-              appointment or an MOT test to keep your vehicle in excellent
+              Whether you need a full van service, partial service, or specific
+              van repairs, we've got you covered. Contact us today to schedule
+              an appointment or a van MOT test to keep your vehicle in excellent
               condition.
               <br />
               <br />
-              Our team of experienced mechanics are dedicated to keeping your
-              vehicles running smoothly. From routine maintenance to complex
-              repairs, we've got you covered. Your safety and satisfaction are
-              our top priorities.
+              Our team of experienced mechanics is devoted to keeping your vans
+              running smoothly. From routine maintenance to complex van repairs,
+              we prioritize your safety and satisfaction.
             </p>
           </div>
           <div className="image-container">
@@ -83,6 +82,7 @@ const Homepage = () => {
           Our Services
         </Typography>
         <Grid container spacing={2}>
+          {/* First 3 grid items */}
           <Grid item xs={4}>
             <Paper
               elevation={3}
@@ -106,9 +106,6 @@ const Homepage = () => {
               </Button>
             </Paper>
           </Grid>
-
-          {/* Repeat the structure for other Grid items */}
-
           <Grid item xs={4}>
             <Paper
               elevation={3}
@@ -130,7 +127,6 @@ const Homepage = () => {
               </Button>
             </Paper>
           </Grid>
-
           <Grid item xs={4}>
             <Paper
               elevation={3}
@@ -153,6 +149,7 @@ const Homepage = () => {
             </Paper>
           </Grid>
 
+          {/* Second 3 grid items */}
           <Grid item xs={4}>
             <Paper
               elevation={3}
@@ -177,7 +174,6 @@ const Homepage = () => {
               </Button>
             </Paper>
           </Grid>
-
           <Grid item xs={4}>
             <Paper
               elevation={3}
@@ -204,12 +200,7 @@ const Homepage = () => {
               </Button>
             </Paper>
           </Grid>
-
-          <Grid
-            item
-            xs={4}
-            className="d-flex justify-content-center align-items-center"
-          >
+          <Grid item xs={4}>
             <Paper
               elevation={3}
               style={{
@@ -237,9 +228,9 @@ const Homepage = () => {
           </Grid>
 
           <Grid
-            className="d-flex justify-content-center align-items-center mt-3"
             item
-            xs={4}
+            xs={12} // Use xs={12} to make it span the entire width
+            className="d-flex justify-content-center align-items-center mt-3"
           >
             <Paper
               elevation={3}
@@ -274,11 +265,15 @@ const Homepage = () => {
           <Button
             variant="contained"
             color="primary"
-            style={{ marginTop: "20px" }}
+            style={{ marginTop: "5px" }}
           >
             Schedule an Appointment
           </Button>
         </div>
+      </section>
+
+      <section className="pt-5">
+        <Testimonials />
       </section>
     </div>
   );
