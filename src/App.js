@@ -8,6 +8,7 @@ import Homepage from "./pages/Homepage";
 import SignIn from "./pages/SignIn";
 import OurServices from "./pages/OurServices";
 import Contact from "./pages/Contact";
+import MyBookings from "./pages/MyBookings";
 
 import Footer from "./components/Footer";
 
@@ -25,6 +26,8 @@ function App() {
             <Route path="ourservices" element={<OurServices />} />
 
             <Route path="contact" element={<Contact />} />
+
+            <Route path="my-bookings" element={<MyBookings />} />
           </Routes>
         </BrowserRouter>
         <Footer />

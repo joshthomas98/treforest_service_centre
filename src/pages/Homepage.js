@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Typography, Button, Paper, Grid } from "@mui/material";
+import { Typography, Button, Paper, Grid } from "@mui/material";
 import Testimonials from "../components/Testimonials";
 
 const Homepage = () => {

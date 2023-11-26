@@ -107,6 +107,10 @@ export default function Contact() {
                 </div>
                 <Typography variant="h6">Email</Typography>
                 <Typography>hello@mui.dev</Typography>
+
+                <Typography className="pt-3">
+                  Drop us an email if you have any queries.
+                </Typography>
               </Paper>
             </Grid>
 
@@ -129,6 +133,10 @@ export default function Contact() {
                 </div>
                 <Typography variant="h6">Phone</Typography>
                 <Typography>07720 253937</Typography>
+
+                <Typography className="pt-3">
+                  Got a question? Feel free to give us a call.
+                </Typography>
               </Paper>
             </Grid>
           </Grid>
